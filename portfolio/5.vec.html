@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <title>Finalní zkouška</title>
+  <link rel="stylesheet" href="5.CSS">
+</head>
+<body>
+
+  <div class="container">
+
+    <h1 class="title">Finalní zkouška</h1>
+    <p class="subtitle">Chyť svítící orb. Pokud dokážeš.</p>
+
+    <div class="game-area" id="gameArea">
+      <div class="orb" id="orb"></div>
+    </div>
+
+    <p class="score">Skóre: <span id="score">0</span></p>
+
+    <a href="main.html" class="btn">Zpět</a>
+
+  </div>
+
+<script>
+let score = 0;
+const orb = document.getElementById("orb");
+const scoreText = document.getElementById("score");
+const area = document.getElementById("gameArea");
+
+function moveOrb() {
+  const x = Math.random() * (area.clientWidth - 50);
+  const y = Math.random() * (area.clientHeight - 50);
+
+  orb.style.left = x + "px";
+  orb.style.top = y + "px";
+}
+
+orb.addEventListener("click", () => {
+  score++;
+  scoreText.textContent = score;
+  moveOrb();
+});
+
+setInterval(moveOrb, 1200);
+moveOrb();
+</script>
+
+</body>
+</html>

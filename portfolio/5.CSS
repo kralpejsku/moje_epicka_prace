@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle at top, #1a0033, #05000a);
+  color: white;
+  text-align: center;
+}
+
+/* KONTEJNER */
+.container {
+  padding-top: 60px;
+}
+
+/* NADPIS */
+.title {
+  font-size: 3rem;
+  color: #c084fc;
+  text-shadow: 0 0 25px #a855f7;
+}
+
+.subtitle {
+  color: #d8b4fe;
+  margin-bottom: 30px;
+}
+
+/* HERNÍ POLE */
+.game-area {
+  position: relative;
+  width: 80%;
+  height: 400px;
+  margin: auto;
+  border-radius: 20px;
+  background: rgba(168,85,247,0.05);
+  border: 1px solid rgba(168,85,247,0.3);
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+}
+
+/* ORB */
+.orb {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #fff, #a855f7);
+  box-shadow: 0 0 20px #c084fc, 0 0 40px #a855f7;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/* SCORE */
+.score {
+  margin-top: 20px;
+  font-size: 1.3rem;
+  color: #e9d5ff;
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 25px;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #a855f7, #c084fc);
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #c084fc;
+}
