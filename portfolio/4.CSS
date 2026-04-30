@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: radial-gradient(circle at top, #12001f, #000);
+  color: #e9d5ff;
+  overflow-x: hidden;
+}
+
+/* KONTEJNER */
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 80px 20px;
+  text-align: center;
+  animation: fadeIn 1.5s ease;
+}
+
+/* TITULEK */
+.title {
+  font-size: 3rem;
+  color: #c084fc;
+  text-shadow: 0 0 25px #a855f7;
+  animation: pulse 2s infinite alternate;
+}
+
+.subtitle {
+  margin-bottom: 50px;
+  color: #a78bfa;
+  font-style: italic;
+}
+
+/* KONTAKTY */
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* KARTY */
+.card {
+  padding: 20px;
+  border-radius: 15px;
+  background: rgba(168, 85, 247, 0.08);
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  backdrop-filter: blur(12px);
+  transition: 0.4s;
+  position: relative;
+  overflow: hidden;
+}
+
+/* GLOW LINE ANIMACE */
+.card::before {
+  content: "";
+  position: absolute;
+  width: 150%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #c084fc, transparent);
+  top: 0;
+  left: -50%;
+  animation: scan 3s linear infinite;
+}
+
+@keyframes scan {
+  0% { left: -50%; }
+  100% { left: 100%; }
+}
+
+/* HOVER */
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 30px rgba(192,132,252,0.5);
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  margin-top: 50px;
+  padding: 12px 30px;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #a855f7, #c084fc);
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #c084fc;
+}
+
+/* ANIMACE */
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(30px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+@keyframes pulse {
+  from {text-shadow: 0 0 10px #a855f7;}
+  to {text-shadow: 0 0 30px #c084fc;}
+   }

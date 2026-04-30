@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: radial-gradient(circle at top, #1a002b, #000);
+  color: white;
+  text-align: center;
+}
+
+/* NADPIS */
+.title {
+  margin-top: 40px;
+  font-size: 3rem;
+  color: #c084fc;
+  text-shadow: 0 0 20px #a855f7;
+  animation: fadeIn 1s ease;
+}
+
+/* GALERIE */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+/* OBRÁZKY */
+.gallery img {
+  width: 100%;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.4s;
+  box-shadow: 0 0 15px rgba(168,85,247,0.4);
+}
+
+/* HOVER */
+.gallery img:hover {
+  transform: scale(1.1) rotate(2deg);
+  box-shadow: 0 0 30px rgba(192,132,252,0.8);
+}
+
+/* MODAL */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.9);
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.5s;
+}
+
+.modal img {
+  max-width: 80%;
+  max-height: 80%;
+  border-radius: 20px;
+  box-shadow: 0 0 40px #c084fc;
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  margin: 30px;
+  padding: 12px 25px;
+  border-radius: 25px;
+  background: linear-gradient(90deg, #a855f7, #c084fc);
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #c084fc;
+}
+
+/* ANIMACE */
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}

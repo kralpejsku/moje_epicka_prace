@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="2.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+  <h1 class="title">Moje fotografie </h1>
+
+  <div class="gallery">
+    <img src="https://artfiles.alphacoders.com/149/thumb-800-149830.png" onclick="openModal(this.src)">
+    <img src="https://th.bing.com/th/id/R.1318877fe34eaa001d12b36686e3cd39?rik=AU2oNhS5OlQJzA&riu=http%3a%2f%2f3.bp.blogspot.com%2f-6iKjv-ttKkg%2fUunTVaUG4MI%2fAAAAAAAAAnI%2fqEj8hKA793s%2fs1600%2f1388035800102.png&ehk=kN06CodvA7ThPgnjl6dAb73unLCS%2fPUUdING3h2ezvA%3d&risl=&pid=ImgRaw&r=0" onclick="openModal(this.src)">
+    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a42294de-3e64-42ad-9d90-bf9b3e3c5a92/djuydqr-7677d554-cb5c-4fb9-bd9e-075554d2a595.png/v1/fill/w_1280,h_1280,q_80,strp/pinkie_pie_playing_violin__by_captainoogabooga9572_djuydqr-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI4MCIsInBhdGgiOiJcL2ZcL2E0MjI5NGRlLTNlNjQtNDJhZC05ZDkwLWJmOWIzZTNjNWE5MlwvZGp1eWRxci03Njc3ZDU1NC1jYjVjLTRmYjktYmQ5ZS0wNzU1NTRkMmE1OTUucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.5JpqBuYw1Ch5ONonDiMaLzUGELLk09XJkWIcDGsDMjY" onclick="openModal(this.src)">
+    <img src="https://i.pinimg.com/originals/7d/a7/e2/7da7e27b46b3164ca07d4da04d54842e.png" onclick="openModal(this.src)">
+    
+  </div>
+
+  <div class="modal" id="modal" onclick="closeModal()">
+    <img id="modalImg">
+  </div>
+
+  <a href="main.html" class="btn">Zpět</a>
+
+<script>
+function openModal(src) {
+  document.getElementById("modal").style.display = "flex";
+  document.getElementById("modalImg").src = src;
+}
+
+function closeModal() {
+  document.getElementById("modal").style.display = "none";
+}
+</script>
+
+</body>
+</html>
+    
+</body>
+</html>

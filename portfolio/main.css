@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: radial-gradient(circle at top, #1a002b, #0d001a);
+  color: white;
+}
+
+/* KONTEJNER */
+.container {
+  text-align: center;
+  padding-top: 80px;
+  animation: fadeIn 1s ease;
+}
+
+/* NADPIS */
+.title {
+  background: linear-gradient(90deg, #c084fc, #a855f7);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+/* MENU */
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+/* KARTY */
+.card {
+  text-decoration: none;
+  width: 220px;
+  padding: 15px;
+  border-radius: 15px;
+  background: rgba(168, 85, 247, 0.15);
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+  backdrop-filter: blur(10px);
+}
+
+/* HOVER EFEKT */
+.card:hover {
+  transform: scale(1.08) translateY(-5px);
+  background: rgba(168, 85, 247, 0.3);
+  box-shadow: 0 0 25px rgba(168, 85, 247, 0.6);
+}
+
+/* ANIMACE */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #a855f7;
+  }
+  to {
+    text-shadow: 0 0 25px #c084fc;
+  }
+}
